@@ -1,16 +1,28 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding-top: 75px;
+  background-image: url(https://images.unsplash.com/photo-1608157637292-78780d5560d1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdsaXR0ZXJ8ZW58MHx8MHx8fDA%3D);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* NAV BAR */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #333;
-  padding: 15px;
+  padding: 20px 0;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
   z-index: 1000;
 }
 
@@ -18,13 +30,43 @@ html {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
+  flex: 1;
+  text-align: center;
 }
 
-body {
-  margin: 0;
-  padding-top: 60px; /* para que el contenido no quede tapado por el nav fijo */
+/* SECCIÓN INICIO (texto + imagen) */
+.home-content {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
 }
 
+.text-column {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.image-column {
+  flex: 1;
+}
+
+.image-column img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SECCIONES QUIÉNES SOMOS Y CONTACTO */
+.section-content {
+  padding: 40px 30px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+}
+
+/* FOOTER */
 .footer {
   background-color: #333;
   color: white;
