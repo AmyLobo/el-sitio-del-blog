@@ -35,7 +35,6 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2 col-md-1">
-        <!-- Espacio reservado para publicidad futura -->
       </div>
       <div class="col-lg-8 col-md-10">
         <div class="row">
@@ -68,28 +67,61 @@
 <section id="quienes-somos" class="py-5">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 col-md-1"></div>
+      <div class="col-lg-2 col-md-1">
+      </div>
       <div class="col-lg-8 col-md-10 p-4 rounded" style="background-color: var(--color-crema);">
         <h1>Quiénes somos</h1>
-        <p>Este sitio web fue creado como parte de un proyecto de práctica de desarrollo web...</p>
+        <p>Este sitio web fue creado como parte de un proyecto de práctica de desarrollo web, con el objetivo de aprender a estructurar y diseñar páginas usando HTML, CSS y Bootstrap. Elegí el glitter como tema porque es algo curioso, divertido y con una historia más interesante de lo que parece a simple vista.</p>
       </div>
-      <div class="col-lg-2 col-md-1"></div>
+      <div class="col-lg-2 col-md-1">
+      </div>
     </div>
   </div>
 </section>
 
-  <section id="contacto" class="section-content">
-    <h1>Contacto</h1>
-    <p>Nombre: Amy Lobo</p>
-    <p>Correo: amy.lobo@correo.com</p>
-    <p>Teléfono: 555-123-4567</p>
-  </section>
+<section id="contacto" class="py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-1">
+      </div>
+      <div class="col-lg-8 col-md-10 p-4 rounded" style="background-color: var(--color-crema);">
+        <h1>Contacto</h1>
+        <p>Nombre: Tu Nombre</p>
+        <p>Correo: correo.falso@ejemplo.com</p>
+        <p>Teléfono: 555-123-4567</p>
+
+        <form id="formContacto" class="mt-4">
+          <div class="mb-3">
+            <label for="correoUsuario" class="form-label">Tu correo electrónico</label>
+            <input type="email" class="form-control" id="correoUsuario" placeholder="nombre@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensajeUsuario" class="form-label">Tu mensaje</label>
+            <textarea class="form-control" id="mensajeUsuario" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="background-color: var(--color-rosa); color: white;">Enviar</button>
+        </form>
+
+        <div id="alertaEnviado" class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+          Mensaje enviado
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-1">
+      </div>
+    </div>
+  </div>
+</section>
 
   <footer class="footer">
     <p>Autor: Amy Lobo</p>
     <p>Contacto: amy.lobo@correo.com</p>
     <p>Proyecto: Blog del Glitter</p>
   </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
